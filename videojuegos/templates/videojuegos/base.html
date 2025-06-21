@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Gestor de Videojuegos{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'videojuegos/css/style.css' %}">
+</head>
+<body>
+    <nav>
+        <a href="{% url 'inicio' %}">Inicio</a>
+        <a href="{% url 'coleccion' %}">Colección</a>
+        <a href="{% url 'agregar' %}">Agregar</a>
+    </nav>
+    {% block content %}{% endblock %}
+    <script src="{% static 'videojuegos/main.js' %}"></script>
+</body>
+</html>

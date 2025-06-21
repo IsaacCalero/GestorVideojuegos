@@ -1,0 +1,9 @@
+{% extends 'videojuegos/base.html' %}
+{% block content %}
+<h2>Mi colección de videojuegos</h2>
+<ul>
+    {% for juego in juegos %}
+        <li>{{ juego.titulo }} - {{ juego.plataforma }} ({{ juego.estado }})</li>
+    {% endfor %}
+</ul>
+{% endblock %}

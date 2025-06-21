@@ -1,0 +1,5 @@
+{% extends 'videojuegos/base.html' %}
+{% block content %}
+<h1>Bienvenido al gestor de videojuegos</h1>
+<p>Accede a <a href="{% url 'agregar' %}">Agregar</a> para registrar un nuevo juego o visita <a href="{% url 'coleccion' %}">Colección</a>.</p>
+{% endblock %}
